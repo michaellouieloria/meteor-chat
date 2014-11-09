@@ -1,0 +1,17 @@
+<head>
+  <title>chat</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor Chat!</h1>
+  {{> loginButtons}}
+  {{> chat}}
+</body>
+
+<template name="chat">
+  {{#each messages}}
+    <p>{{text}}</p>
+  {{/each}}
+  <textarea></textarea>
+  <p><button class="clickable">Submit</button></p>
+</template>
